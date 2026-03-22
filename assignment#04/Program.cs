@@ -1,7 +1,9 @@
-﻿namespace assignment_04;
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace assignment_04;
 internal class Program
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
 
         #region Question-part#01
@@ -154,5 +156,68 @@ internal class Program
 
         */
         #endregion
+
+        #region Question-part#03-1
+
+        /*
+        
+        Console.Write("Enter the operation you want to do ( + , - , * , / ) : ");
+        string operation = Console.ReadLine()!;
+
+        while (operation != "+" && operation != "-" && operation != "*" && operation != "/")
+        {
+            Console.Write("Invalid operation. Please enter one of the following: +, -, *, /  => ");
+            operation = Console.ReadLine()!;
+        }
+
+        Console.Write("Enter the number one : ");
+        bool numbers = double.TryParse(Console.ReadLine(), out double num1);
+        Console.Write("Enter the number two : ");
+        numbers = double.TryParse(Console.ReadLine(), out double num2);
+        
+        switch (operation)
+        {
+            case "+":
+                Console.WriteLine($"The result of addition is : {Add(num1, num2):F3}");
+                break;
+            case "-":
+                Console.WriteLine($"The result of Subtract is : {Subtract(num1, num2):F3}");
+                break;
+            case "*":
+                Console.WriteLine($"The result of Multiply is : {Multiply(num1, num2):F3}");
+                break;
+            case "/":
+                Console.WriteLine($"The result of Divide is :{Divide(num1, num2):F3}");
+                break;
+        }
+        
+         */
+
+        #endregion
     }
+
+    #region Question-methods
+
+    /*
+    
+    public static double Add(Double a, Double b)
+    {
+        return a + b;
+    }
+    public static double Subtract(Double a, Double b)
+    {
+        return a - b;
+    }
+    public static double Multiply(Double a, Double b)
+    {
+        return a * b;
+    }
+    public static double Divide(Double a, Double b)
+    {
+        return a / b;
+    }
+    
+     */
+
+    #endregion
 }
