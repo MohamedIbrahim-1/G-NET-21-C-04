@@ -109,7 +109,50 @@ internal class Program
         #endregion
 
         #region Question-part#02-2
-            
+        /*
+        
+        int[,] gradesStd = new int[3, 4];
+
+        Console.WriteLine("=== Student Grades Entry ===\n");
+
+        for (int i = 0; i < 3; i++)
+        {
+            Console.WriteLine($"Student {i + 1}:");
+            for (int j = 0; j < 4; j++)
+            {
+                while (true)
+                {
+                    Console.Write($"  Subject {j + 1} grade: ");
+                    if (int.TryParse(Console.ReadLine(), out int gradestd))
+                    {
+                        gradesStd[i, j] = gradestd;
+                        break;
+                    }
+                    Console.WriteLine("  Invalid input. Please enter a whole number.");
+                }
+            }
+            Console.WriteLine();
+        }
+
+        Console.WriteLine("=== Results ===\n");
+
+        double totalSumClass = 0;
+
+        for (int i = 0; i < 3; i++)
+        {
+            double studentSum = 0;
+            for (int j = 0; j < 4; j++)
+                studentSum += gradesStd[i, j];
+
+            double studentAvg = studentSum / 4;
+            totalSumClass += studentSum;
+            Console.WriteLine($"Student {i + 1} average: {studentAvg:F3}");
+        }
+
+        double overallAvg = totalSumClass / (3 * 4);
+        Console.WriteLine($"\nOverall class average: {overallAvg:F3}");
+
+        */
         #endregion
     }
 }
