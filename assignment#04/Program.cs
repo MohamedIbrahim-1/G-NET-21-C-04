@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using assignment_04.Enums;
+using System.Security.Cryptography.X509Certificates;
 
 namespace assignment_04;
 internal class Program
@@ -209,6 +210,55 @@ internal class Program
 
         #endregion
 
+        #region Question-final
+
+        /*
+        
+        Console.Write("Please enter a valid integer lees than 6 : ");
+        bool isvalidNumber = int.TryParse(Console.ReadLine(), out int number);
+        while(!isvalidNumber || number >= 6 || number <=0) { 
+            Console.Write("Please enter a valid integer lees than 6 : ");
+            isvalidNumber = int.TryParse(Console.ReadLine(), out number);
+        }
+        Console.WriteLine($"You entered the number: {number}");
+
+        int[] Grades = new int[number];
+
+
+        for (int i = 0; i < Grades.Length; i++)
+        {
+            Console.Write($"Enter grade for student {i + 1} : ");
+            bool isvalidGrade = int.TryParse(Console.ReadLine(), out int StdGrade);
+            while (!isvalidGrade || StdGrade < 0 || StdGrade > 100)
+            {
+                Console.Write($"Invalid input. Please enter a valid grade for student {i + 1} (0-100): ");
+                isvalidGrade = int.TryParse(Console.ReadLine(), out StdGrade);
+            }
+            Grades[i] = StdGrade;
+
+        }
+
+        Console.WriteLine("\n--- Report ---");
+        for (int i = 0; i < Grades.Length; i++)
+        {
+            EStdGrade gradeEnum = GetGrade(Grades[i]);
+            Console.WriteLine($"Student {i + 1}: {Grades[i]} -> Grade : {gradeEnum}");
+        }
+
+
+        double avg = CalculateAverage(Grades);
+        Console.WriteLine($"\nAverage : {avg:F3}");
+
+
+        GetMinMax(Grades, out int min, out int max);
+        Console.WriteLine($"Highest Score: {max}");
+        Console.WriteLine($"Lowest Score: {min}");
+        
+        */
+
+
+        #endregion
+
     }
 
     #region Question-methods
@@ -247,5 +297,64 @@ internal class Program
 
 
 
+
+    #region methods-question-final
+   /* 
+    
+    public static EStdGrade GetGrade(int score)
+    {
+        if (score >= 90)
+        {
+            return EStdGrade.A;
+        }
+        else if (score >= 80)
+        {
+            return EStdGrade.B;
+        }
+        else if (score >= 70)
+        {
+            return EStdGrade.C;
+        }
+        else if (score >= 60)
+        {
+            return EStdGrade.D;
+        }
+        else
+        {
+            return EStdGrade.F;
+        }
+    }
+
+    public static double CalculateAverage(int[] Grades)
+    {
+        double sum = 0;
+
+        foreach (int g in Grades)
+        {
+            sum = sum + g;
+        }
+
+        return sum / Grades.Length;
+    }
+
+    public static void GetMinMax(int[] Grades, out int min, out int max)
+    {
+        min = Grades[0];
+        max = Grades[0];
+
+        foreach (int g in Grades)
+        {
+            if (g < min)
+                min = g;
+
+            if (g > max)
+                max = g;
+        }
+    }
+   
+    */
     #endregion
+
+
+#endregion
 }
