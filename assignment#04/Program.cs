@@ -194,6 +194,21 @@ internal class Program
          */
 
         #endregion
+
+        #region Question-part#03-2
+
+        /*
+        Console.Write("Enter radius: ");
+        double radius = double.Parse(Console.ReadLine()!);
+
+        CalculateCircle(radius, out double area, out double circumference);
+
+        Console.WriteLine($"Area = {area:F3}");
+        Console.WriteLine($"Circumference = {circumference:F3}");
+        */
+
+        #endregion
+
     }
 
     #region Question-methods
@@ -218,6 +233,19 @@ internal class Program
     }
     
      */
+
+
+    #region methods-part#03-2
+    /*
+    public static void CalculateCircle(double radius, out double area, out double circumference)
+    {
+        area = Math.PI * radius * radius;
+        circumference = 2 * Math.PI * radius;
+    }
+    */
+    #endregion
+
+
 
     #endregion
 }
